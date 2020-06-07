@@ -1,3 +1,10 @@
+html {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
 #page-create-point {
     width: 90%;
     max-width: 1100px;
@@ -27,9 +34,6 @@
 
 }
 
-#page-create-point main {
-    margin-top: 40px;
-}
 
 #page-create-point header a span {
 
@@ -46,67 +50,93 @@
 form {
 
     background-color: white;
-    margin: 80px;
+    margin: 80px auto;
     padding: 50px;
     margin-top: 80px;  /*Padding com max-widthi aumenta a caixa*/
     border-radius: 8px;
 
     max-width: 730px;
 
-
 }
 
-.group-endereco-numero {
-    display: flex;
-    justify-content: space-between;   
-
+form h1 {
+    font-size: 36px;
 }
 
-.group-cidade-estado {
-    display: flex;
-    justify-content: space-between;   
+form fieldset {
 
-}
-
-input, select {
-    padding: 10px;
-    background-color:  #f0f0f5;
-    margin-top: 7px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    
-}
-
-fieldset {
-    padding: 20px;
     border: none;
     margin-top: 20px;   
     display: flex;
 }
 
-
-.field>input {
-    width: 100%;
+form legend {
+    margin-bottom: 30px;
 }
+
+form legend h2 {
+    font-size: 20px;
+}
+
+label {
+    font-size: 17px;
+    margin-bottom: 9px;
+}
+
+
 
 .field {
 
+    flex: 1;
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
+    margin-bottom: 24px;
+
 
 }
 
-.endereco-w {
-    width: 70%;
+
+.group-endereco-numero {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+
 }
 
-fieldset>.group-cidade-estado>cidade-w {
-    width: 50%;
+.group-endereco-numero .numero {
+    margin-left: 30px;
+}
+
+.group-cidade-estado {
+    display: flex;
+    justify-content: space-between; 
+
+}
+
+.group-cidade-estado .cidade {
+    margin-left: 30px;
+}
+
+
+
+input, select {
+    padding: 10px;
+    background-color:  #f0f0f5;
+    font-size: 16px;
+    
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+    width: 100%;
     
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 
 button {
 
@@ -117,10 +147,19 @@ button {
     border: none;
     outline: none;
     color: white;
+
+    border-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+
+    margin-top: 40px;
+
+    transition: 400ms;
 }
 
-
-
+button:hover {
+    background-color: #2fb86e;
+}
 
 
 
